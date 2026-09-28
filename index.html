@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist della Classe</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    h1 {
+      color: #ff0000;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    p {
+      color: #aaaaaa;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .player-container {
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      border-radius: 16px;
+      overflow: hidden;
+      background-color: #000;
+    }
+    /* Rende il lettore perfettamente adattabile a PC, tablet e smartphone */
+    .player-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎵 Roccascalegna Second Grade</h1>
+  <p>Ascolta e guarda i brani scelti insieme direttamente dal browser!</p>
+
+  <div class="player-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=2tjwPu9QahpcItHB&amp;list=PLIVpVDgPlToE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+  </div>
+
+</body>
+</html>
